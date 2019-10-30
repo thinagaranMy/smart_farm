@@ -1,0 +1,23 @@
+{
+  "smartFarmSolutionApp": {
+    "farm": {
+      "home": {
+        "title": "Farms",
+        "createLabel": "สร้าง Farm",
+        "createOrEditLabel": "สร้างหรือแก้ไข Farm",
+        "notFound": "No Farms found"
+      },
+      "created": "Farm ถูกสร้างด้วย {{ param }}",
+      "updated": "Farm ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Farm ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Farm {{ id }}?"
+      },
+      "detail": {
+        "title": "Farm"
+      },
+      "creationDate": "Creation Date",
+      "owner": "Owner"
+    }
+  }
+}

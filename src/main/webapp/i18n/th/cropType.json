@@ -1,0 +1,22 @@
+{
+  "smartFarmSolutionApp": {
+    "cropType": {
+      "home": {
+        "title": "Crop Types",
+        "createLabel": "สร้าง Crop Type",
+        "createOrEditLabel": "สร้างหรือแก้ไข Crop Type",
+        "notFound": "No Crop Types found"
+      },
+      "created": "Crop Type ถูกสร้างด้วย {{ param }}",
+      "updated": "Crop Type ถูกแก้ไขด้วย {{ param }}",
+      "deleted": "Crop Type ถูกลบด้วย {{ param }}",
+      "delete": {
+        "question": "คุณต้องการที่จะลบ Crop Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Crop Type"
+      },
+      "cropName": "Crop Name"
+    }
+  }
+}

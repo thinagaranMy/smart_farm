@@ -1,0 +1,32 @@
+{
+    "name": "PhReading",
+    "fields": [
+        {
+            "fieldName": "phReading",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "area",
+            "otherEntityRelationshipName": "phReading",
+            "relationshipName": "area",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191029125554",
+    "entityTableName": "ph_reading",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

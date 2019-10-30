@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  jhipster:
+    image: jhipster/jhipster
+    volumes:
+      - ~/smartFarmSolution/jhipster:/home/jhipster/app
+    ports:
+      - 8080:8080
+      - 9000:9000
+      - 3001:3001

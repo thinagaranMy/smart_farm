@@ -1,0 +1,22 @@
+{
+  "smartFarmSolutionApp": {
+    "cropType": {
+      "home": {
+        "title": "Crop Types",
+        "createLabel": "Crop Type-ஐ உருவாக்கு",
+        "createOrEditLabel": "Crop Type -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Crop Types found"
+      },
+      "created": "Crop Type புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Crop Type மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Crop Type நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Crop Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Crop Type"
+      },
+      "cropName": "Crop Name"
+    }
+  }
+}

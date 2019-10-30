@@ -1,0 +1,24 @@
+{
+  "smartFarmSolutionApp": {
+    "waterConsumption": {
+      "home": {
+        "title": "Water Consumptions",
+        "createLabel": "Create a new Water Consumption",
+        "createOrEditLabel": "Create or edit a Water Consumption",
+        "notFound": "No Water Consumptions found"
+      },
+      "created": "A new Water Consumption is created with identifier {{ param }}",
+      "updated": "A Water Consumption is updated with identifier {{ param }}",
+      "deleted": "A Water Consumption is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Water Consumption {{ id }}?"
+      },
+      "detail": {
+        "title": "Water Consumption"
+      },
+      "date": "Date",
+      "millimiters": "Millimiters",
+      "area": "Area"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+/**
+* The farm entity
+*/
+entity Farm{
+    creationDate Instant
+}
+/**
+* The are entity
+*/
+entity Area{
+	size Integer
+}
+
+entity WaterConsumption{
+	date Instant,
+    millimiters Double
+}
+
+/*
+* PhReading entity
+*/
+entity PhReading{
+	phReading Double,
+    date Instant
+}
+
+entity CropType{
+	cropName String
+}
+
+/*
+* Plantation
+*/
+entity Plantation{
+	plantDate Instant,
+    endDate Instant
+}
+
+relationship OneToOne {
+	Farm{owner} to User
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+//	CropType to Plantation,
+	Plantation{areas} to Area
+}
+
+relationship ManyToOne {
+	WaterConsumption{area} to Area,
+    PhReading{area} to Area,
+    Area{farm} to Farm,
+    Plantation{cropType} to CropType
+    
+}
+
+
+// Set service options to all except few
+service all with serviceImpl 
+

@@ -1,0 +1,20 @@
+{
+    "name": "CropType",
+    "fields": [
+        {
+            "fieldName": "cropName",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191029125555",
+    "entityTableName": "crop_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

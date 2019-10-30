@@ -1,0 +1,23 @@
+{
+  "smartFarmSolutionApp": {
+    "farm": {
+      "home": {
+        "title": "Farms",
+        "createLabel": "Buat Farm baru",
+        "createOrEditLabel": "Buat atau edit Farm",
+        "notFound": "No Farms found"
+      },
+      "created": "Farm dengan id {{ param }} telah dibuat",
+      "updated": "Farm dengan id {{ param }} telah diperbaharui",
+      "deleted": "Farm dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Farm {{ id }}?"
+      },
+      "detail": {
+        "title": "Farm"
+      },
+      "creationDate": "Creation Date",
+      "owner": "Owner"
+    }
+  }
+}

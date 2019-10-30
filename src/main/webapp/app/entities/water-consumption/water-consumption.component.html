@@ -1,0 +1,66 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="smartFarmSolutionApp.waterConsumption.home.title">Water Consumptions</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-water-consumption" [routerLink]="['/water-consumption/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="smartFarmSolutionApp.waterConsumption.home.createLabel">
+            Create a new Water Consumption
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="waterConsumptions?.length === 0">
+        <span jhiTranslate="smartFarmSolutionApp.waterConsumption.home.notFound">No waterConsumptions found</span>
+    </div>
+    <div class="table-responsive" *ngIf="waterConsumptions?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr>
+            <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+            <th scope="col" ><span jhiTranslate="smartFarmSolutionApp.waterConsumption.date">Date</span></th>
+            <th scope="col" ><span jhiTranslate="smartFarmSolutionApp.waterConsumption.millimiters">Millimiters</span></th>
+            <th scope="col" ><span jhiTranslate="smartFarmSolutionApp.waterConsumption.area">Area</span></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let waterConsumption of waterConsumptions ;trackBy: trackId">
+                <td><a [routerLink]="['/water-consumption', waterConsumption.id, 'view' ]">{{waterConsumption.id}}</a></td>
+                <td>{{waterConsumption.date | date:'medium'}}</td>
+                <td>{{waterConsumption.millimiters}}</td>
+                <td>
+                    <div *ngIf="waterConsumption.area">
+                        <a [routerLink]="['/area', waterConsumption.area?.id, 'view' ]" >{{waterConsumption.area?.id}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/water-consumption', waterConsumption.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/water-consumption', waterConsumption.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/water-consumption', { outlets: { popup: waterConsumption.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
