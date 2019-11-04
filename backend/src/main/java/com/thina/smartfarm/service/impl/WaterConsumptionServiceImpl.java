@@ -75,4 +75,13 @@ public class WaterConsumptionServiceImpl implements WaterConsumptionService {
         log.debug("Request to delete WaterConsumption : {}", id);
         waterConsumptionRepository.deleteById(id);
     }
+
+    /**
+     * Find waterconsumtion by area
+     */
+    @Override
+    public Optional<List<WaterConsumption>> findAllByArea(Long id) {
+        log.debug("Request to query findalla by aread id: {}", id);
+        return waterConsumptionRepository.findWaterConsumptionByArea_id(id);
+    }
 }
