@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.thina.smartfarm.config.WebConfigurerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.574 s - in com.thina.smartfarm.config.WebConfigurerTest

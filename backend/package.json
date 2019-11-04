@@ -1,0 +1,22 @@
+{
+  "name": "smartfarm",
+  "version": "0.0.0",
+  "description": "Description for smartfarm",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "devDependencies": {
+    "generator-jhipster-docker": "2.5.0",
+    "generator-jhipster-primeng": "3.0.0",
+    "generator-jhipster-swagger-cli": "3.0.1",
+    "generator-jhipster-primeng-charts": "1.2.0",
+    "generator-jhipster-angular-material-integration": "1.0.17",
+    "generator-jhipster": "6.4.1",
+    "@openapitools/openapi-generator-cli": "0.0.14-4.0.2"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  }
+}

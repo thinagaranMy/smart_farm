@@ -1,0 +1,24 @@
+{
+  "smarfarmApp": {
+    "waterConsumption": {
+      "home": {
+        "title": "Water Consumptions",
+        "createLabel": "Buat Water Consumption baru",
+        "createOrEditLabel": "Buat atau edit Water Consumption",
+        "notFound": "No Water Consumptions found"
+      },
+      "created": "Water Consumption dengan id {{ param }} telah dibuat",
+      "updated": "Water Consumption dengan id {{ param }} telah diperbaharui",
+      "deleted": "Water Consumption dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Water Consumption {{ id }}?"
+      },
+      "detail": {
+        "title": "Water Consumption"
+      },
+      "date": "Date",
+      "millimiters": "Millimiters",
+      "area": "Area"
+    }
+  }
+}
