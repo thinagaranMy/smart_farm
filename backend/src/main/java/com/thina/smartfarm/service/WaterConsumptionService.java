@@ -40,4 +40,12 @@ public interface WaterConsumptionService {
      * @param id the id of the entity.
      */
     void delete(Long id);
+
+    /**
+     * Find waterconsumtion by area
+     *
+     * @param areaid the id of the area
+     */
+    Optional<List<WaterConsumption>> findAllByArea(Long id);
+
 }

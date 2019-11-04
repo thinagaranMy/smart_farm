@@ -115,4 +115,17 @@ public class WaterConsumptionResource {
         waterConsumptionService.delete(id);
         return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString())).build();
     }
+
+    /**
+     * {@code GET  /water-consumptions/areaid} : get all the waterConsumptions by area.
+     *
+
+     * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of waterConsumptions in body.
+     */
+    @GetMapping("/water-consumptions-area")
+    public ResponseEntity<List<WaterConsumption>> getAllWaterConsumptionsByArea(@RequestParam String id) {
+        log.debug("REST request to get all WaterConsumptions by area id: {}", id);
+        Optional<List<WaterConsumption>> waterConsumption = waterConsumptionService.findAllByArea(Long.valueOf(id));
+        return ResponseUtil.wrapOrNotFound(waterConsumption);
+    }
 }
