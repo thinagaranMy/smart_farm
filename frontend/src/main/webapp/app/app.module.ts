@@ -14,6 +14,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { WaterConsumptionByAreaGraphComponent } from './water-consumption-by-area-graph/water-consumption-by-area-graph.component';
 
 @NgModule({
   imports: [
@@ -23,9 +24,9 @@ import { ErrorComponent } from './layouts/error/error.component';
     SmarfarmHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     SmarfarmEntityModule,
-    SmarfarmAppRoutingModule
+    SmarfarmAppRoutingModule,
   ],
-  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, WaterConsumptionByAreaGraphComponent],
   bootstrap: [JhiMainComponent]
 })
 export class SmarfarmAppModule {}
