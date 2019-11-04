@@ -1,0 +1,32 @@
+{
+    "name": "WaterConsumption",
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "millimiters",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "area",
+            "otherEntityRelationshipName": "waterConsumption",
+            "relationshipName": "area",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191103083911",
+    "entityTableName": "water_consumption",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Area",
+    "fields": [
+        {
+            "fieldName": "size",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "farm",
+            "otherEntityRelationshipName": "area",
+            "relationshipName": "farm",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "plantation",
+            "otherEntityName": "plantation",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191103083910",
+    "javadoc": "The are entity",
+    "entityTableName": "area",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

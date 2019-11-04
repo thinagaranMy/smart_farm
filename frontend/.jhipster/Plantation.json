@@ -1,0 +1,38 @@
+{
+    "name": "Plantation",
+    "fields": [
+        {
+            "fieldName": "plantDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "endDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "area",
+            "otherEntityRelationshipName": "plantation",
+            "relationshipName": "areas"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "cropType",
+            "otherEntityRelationshipName": "plantation",
+            "relationshipName": "cropType",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191103084002",
+    "entityTableName": "plantation",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
