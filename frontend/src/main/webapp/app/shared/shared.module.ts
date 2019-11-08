@@ -8,7 +8,13 @@ import { HasAnyAuthorityDirective } from './auth/has-any-authority.directive';
 
 @NgModule({
   imports: [SmarfarmSharedLibsModule],
-  declarations: [FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent, JhiLoginModalComponent, HasAnyAuthorityDirective],
+  declarations: [
+    FindLanguageFromKeyPipe, 
+    JhiAlertComponent, 
+    JhiAlertErrorComponent, 
+    JhiLoginModalComponent, 
+    HasAnyAuthorityDirective
+    ],
   entryComponents: [JhiLoginModalComponent],
   exports: [
     SmarfarmSharedLibsModule,

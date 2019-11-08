@@ -1,9 +1,8 @@
 <div [ngSwitch]="isAuthenticated()">
     <div *ngSwitchCase="true">
-        <h1 class="display-4" jhiTranslate="home.title">Welcome, Java Hipster!</h1>
+        <h1 class="display-4" jhiTranslate="home.title">Smart farm solution</h1>
         <jhi-dashboard></jhi-dashboard>
     </div>
     <div *ngSwitchCase="false">
-        <p>Latest news</p>
     </div>
 </div>
