@@ -1,3 +1,4 @@
+import { HomeCarouselComponent } from './../home-carousel/home-carousel.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -12,6 +13,8 @@ import { SmarfarmDashboardModule } from '../dashboard/dashboard.module';
     SmarfarmDashboardModule, 
     RouterModule.forChild([HOME_ROUTE])
     ],
-  declarations: [HomeComponent]
+  declarations: [
+    HomeComponent,
+    HomeCarouselComponent]
 })
 export class SmarfarmHomeModule {}
