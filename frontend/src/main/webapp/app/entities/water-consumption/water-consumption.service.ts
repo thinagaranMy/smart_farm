@@ -34,9 +34,17 @@ export class WaterConsumptionService {
   }
 
   find(id: number): Observable<EntityResponseType> {
+    
     return this.http
       .get<IWaterConsumption>(`${this.resourceUrl}/${id}`, { observe: 'response' })
       .pipe(map((res: EntityResponseType) => this.convertDateFromServer(res)));
+  }
+
+  findByArea(id: number): Observable<EntityArrayResponseType>{
+    const areaurl : string =  this.resourceUrl + '-area?id=' ;
+     return this.http
+      .get<IWaterConsumption[]>(areaurl + id , { observe: 'response' })
+      .pipe(map((res: EntityArrayResponseType) => this.convertDateArrayFromServer(res)));
   }
 
   query(req?: any): Observable<EntityArrayResponseType> {

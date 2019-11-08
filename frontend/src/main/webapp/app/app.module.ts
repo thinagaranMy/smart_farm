@@ -15,6 +15,7 @@ import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 import { WaterConsumptionByAreaGraphComponent } from './water-consumption-by-area-graph/water-consumption-by-area-graph.component';
+import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { WaterConsumptionByAreaGraphComponent } from './water-consumption-by-are
     SmarfarmEntityModule,
     SmarfarmAppRoutingModule,
   ],
-  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, WaterConsumptionByAreaGraphComponent],
+  declarations: [
+    JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [JhiMainComponent]
 })
 export class SmarfarmAppModule {}
