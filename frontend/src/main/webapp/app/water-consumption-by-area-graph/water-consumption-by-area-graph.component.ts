@@ -64,7 +64,8 @@ export class WaterConsumptionByAreaGraphComponent implements OnInit {
       const dataDailySalesChart: any = {
           labels: ['M', 'T', 'W', 'T', 'F'],
           series: [
-            [10,20,30,15,20]
+            [10,20,30,15,20],
+            [15,10,20,15,25]
           ]
       };
 
